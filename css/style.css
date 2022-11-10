@@ -43,14 +43,14 @@ svg {
 img {
   display: block;
 }
-:hover,
+/* :hover,
 :focus ::after,
 ::before {
   transition-property: color, background, background-color, fill, box-shadow,
     border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .link {
   text-decoration: none;
 }
@@ -104,6 +104,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .carrent {
   color: var(--hover-text-color);
@@ -132,6 +135,9 @@ img {
   color: inherit;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail,
@@ -198,10 +204,14 @@ img {
   text-align: center;
   display: block;
   padding: 10px 32px;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background: var(--hover-bg-btn);
+  background-color: var(--hover-bg-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*------------ BENEFITS -------------*/
@@ -337,6 +347,10 @@ img {
   border-radius: 50%;
   background-color: var(--light-bg);
   fill: var(--link-fill-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon:hover,
 .social-icon:focus {
@@ -372,6 +386,10 @@ img {
   align-items: center;
   color: var(--link-fill-color);
   padding: 16px 32px;
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -411,9 +429,17 @@ img {
 }
 .footer-link-map {
   color: var(--second-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link-map:hover,
@@ -452,6 +478,10 @@ footer > .container {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--main-footer-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-ikon {
   fill: currentColor;
@@ -483,6 +513,10 @@ footer > .container {
   border: none;
   cursor: pointer;
   padding: 6px 22px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .carrent-btn {
   color: var(--second-text-color);
@@ -491,10 +525,9 @@ footer > .container {
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--second-text-color);
-  background: var(--hover-text-color);
+  background-color: var(--hover-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 .portfolio-list-info {
   display: flex;
@@ -544,7 +577,10 @@ footer > .container {
   line-height: 1.56;
   color: var(--second-text-color);
   padding: 63px 24px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: background-color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
 a:hover .item-box-text,
@@ -562,6 +598,10 @@ a:focus .item-box-text {
 .portfolio-item-link {
   display: flex;
   flex-direction: column;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-link:hover,
 .portfolio-item-link:focus {
