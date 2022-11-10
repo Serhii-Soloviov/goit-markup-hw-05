@@ -64,7 +64,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="benefits section">
@@ -131,6 +131,7 @@
                 alt="Людина сидить за комп'ютером і друкує на клавіатурі"
                 width="370"
               />
+              <h3 class="work-item-title">Десктопні додатки</h3>
             </li>
             <li class="work-item">
               <img
@@ -138,6 +139,7 @@
                 alt="Людина сидить за ноутбуком і тримає смартфон"
                 width="370"
               />
+              <h3 class="work-item-title">Мобільні додатки</h3>
             </li>
             <li class="work-item">
               <img
@@ -145,6 +147,7 @@
                 alt="Людина працює на планшеті на фоні комп'ютера"
                 width="370"
               />
+              <h3 class="work-item-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -561,5 +564,16 @@
         </div>
       </div>
     </footer>
+        <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
