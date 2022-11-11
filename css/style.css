@@ -582,7 +582,7 @@ footer > .container {
   transition-property: background-color, box-shadow, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: auto;
+  /* overflow: auto; */
 }
 a:hover .item-box-text,
 a:focus .item-box-text {
